@@ -7,6 +7,7 @@ tags: github, devto, workflow, staging, commit, push
 
 # The Ecosysytem
 To understand the git workflow, we have to understand the ecosystem within which it exists.
+
 - Git
 
 This is a local version control system that tracks changes to files and code. It runs on every users local computer hence also known as an open source distributed version control system.
