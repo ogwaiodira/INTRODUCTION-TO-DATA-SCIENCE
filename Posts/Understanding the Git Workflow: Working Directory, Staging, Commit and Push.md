@@ -1,6 +1,6 @@
 ---
 title: "Understanding the Git Workflow: Working Directory, Staging, Commit and Push"
-published: false
+published: true
 description: "This workflow can be summarised as a local to remote workflow."
 tags: github, devto, workflow, staging, commit, push
 ---
