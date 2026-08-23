@@ -1,0 +1,26 @@
+name: Publish Articles to DEV.to
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'posts/**/*.md' # Triggers only when markdown files in posts/ change
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # Grants GitHub permission to save assigned article IDs back to your repo
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Publish to DEV.to
+        uses: sinedied/publish-devto@v2
+        with:
+          devto_key: ${{ secrets.DEVTO_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          files: 'posts/**/*.md' # Path to your markdown articles
+          branch: main
