@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'posts/**/*.md' # Triggers only when markdown files in posts/ change
+      - 'Posts/**/*.md' # Also trigger for capitalized Posts/ directory
 
 jobs:
   publish:
@@ -22,5 +23,5 @@ jobs:
         with:
           devto_key: ${{ secrets.DEVTO_TOKEN }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          files: 'posts/**/*.md' # Path to your markdown articles
+          files: 'posts/**/*.md,Posts/**/*.md' # Path(s) to your markdown articles
           branch: main
