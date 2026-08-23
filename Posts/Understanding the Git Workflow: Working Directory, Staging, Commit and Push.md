@@ -1,3 +1,10 @@
+---
+title: "Understanding the Git Workflow: Working Directory, Staging, Commit and Push"
+published: false
+description: "This workflow can be summarised as a local to remote workflow."
+tags: github, devto, workflow, staging, commit, push
+---
+
 # The Ecosysytem
 To understand the git workflow, we have to understand the ecosystem within which it exists.
 - Git
